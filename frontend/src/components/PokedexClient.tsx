@@ -99,7 +99,10 @@ export default function PokedexClient({ initialPokemon, availableTypes }: Pokede
       <header className={styles.header}>
         <div className={styles.headerTop}>
           <div className={styles.logoArea}>
-            <h1 className="gradient-text">Pokedex Lite</h1>
+            <div className={styles.titleWrapper}>
+              <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png" alt="Pokedex Logo" className={styles.logoIcon} />
+              <h1 className="gradient-text">Pokedex Lite</h1>
+            </div>
             <p>Catch &apos;em all, browse through the world of Pokemon.</p>
           </div>
           <button 
